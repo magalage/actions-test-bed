@@ -39,7 +39,7 @@ jobs:
       - name: Run ls command
         run: now=$(date)
       - name: echo variablenow
-        run: echo $now
+        run: echo "The current date is:" $now
 
       - name: Run date command
         run: echo "varDate = $(ls)"
