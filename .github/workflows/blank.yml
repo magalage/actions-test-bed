@@ -44,7 +44,7 @@ jobs:
           # path to json file
           # path: # optional
           # json input
-          json: '{test1: "test1-value"}'
+          json: '{"test1":"test1-value"}'
           # which property to read
           property: 'test1' 
           # 
