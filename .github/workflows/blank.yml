@@ -37,7 +37,7 @@ jobs:
      
      # Get sample command output into a varibale
       - name: Run sample command
-        run: gver = $(git version)
+        run: gver=$(git version)
       - name: echo uver
         run: echo "The git ver is :" $gver
 
