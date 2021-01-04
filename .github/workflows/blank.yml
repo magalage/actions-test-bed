@@ -34,7 +34,11 @@ jobs:
         run: |
           echo Add other actions to build,
           echo test, and deploy your project.
-      # Get date into a varibale
+     
+     # Get date into a varibale
+      - name: Run ls command
+        run: echo ls
+
       - name: Run date command
         run: echo "varDate = $(ls)"
       - name: read JSON property
