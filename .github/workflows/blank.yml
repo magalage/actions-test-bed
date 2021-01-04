@@ -40,7 +40,7 @@ jobs:
         run: |
           gver=$(git version)
           echo "The git ver is :" $gver
-          echo "GITHUB_GIT_VERSION=$(echo {"gitversion":$gver})" >> $GITHUB_ENV
+          echo "GITHUB_GIT_VERSION=$(echo {'gitversion':'$gver'})" >> $GITHUB_ENV
       - name: test
         run: echo ${{ env.GITHUB_GIT_VERSION }}
         
