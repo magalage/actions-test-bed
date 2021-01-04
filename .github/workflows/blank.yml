@@ -29,7 +29,7 @@ jobs:
       - id: output-test
         run: |
           var1=$(git version)
-          echo "::set-output name=test::hello"
+          echo "::set-output name=test::$var1"
           
       - run: |
           echo ${{steps.output-test.outputs.test}}
