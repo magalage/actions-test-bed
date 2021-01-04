@@ -38,6 +38,8 @@ jobs:
      # Get date into a varibale
       - name: Run ls command
         run: now=$(date)
+      - name: echo variablenow
+        run: echo $now
 
       - name: Run date command
         run: echo "varDate = $(ls)"
