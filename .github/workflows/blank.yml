@@ -36,7 +36,7 @@ jobs:
           echo test, and deploy your project.
       # Get date into a varibale
       - name: Run date command
-        run: varDate = $(date)
+        run: varDate = $(ls)
       - name: read JSON property
         id: read_property
         # You may pin to the exact commit or the version.
