@@ -32,7 +32,7 @@ jobs:
           echo "::set-output name=test::hello"
           
       - run: |
-          echo ${{output-test.outputs.test}}
+          echo ${{steps.output-test.outputs.test}}
           
           
           
