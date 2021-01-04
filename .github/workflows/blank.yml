@@ -35,11 +35,11 @@ jobs:
           echo Add other actions to build,
           echo test, and deploy your project.
      
-     # Get date into a varibale
-      - name: Run ls command
-        run: now=$(date)
-      - name: echo variablenow
-        run: echo "The current date is:" $now
+     # Get sample command output into a varibale
+      - name: Run sample command
+        run: uver=$(lsb_release -d)
+      - name: echo uver
+        run: echo "The current date is:" $uver
 
       - name: Run date command
         run: echo "varDate = $(ls)"
