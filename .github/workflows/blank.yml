@@ -37,7 +37,7 @@ jobs:
      
      # Get sample command output into a varibale
       - name: Run sample command
-        run: echo git version
+        run: git version
       - name: echo uver
         run: echo "The current date is:" $uver
 
